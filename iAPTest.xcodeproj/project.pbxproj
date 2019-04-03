@@ -7,15 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D8C46629CF95D76CE280BF0 /* Pods_iAPTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFF410FB8412296DAEC71F5 /* Pods_iAPTest.framework */; };
 		7F69373022555F5200F68EC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69372F22555F5200F68EC5 /* AppDelegate.swift */; };
 		7F69373222555F5200F68EC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69373122555F5200F68EC5 /* ViewController.swift */; };
 		7F69373522555F5200F68EC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F69373322555F5200F68EC5 /* Main.storyboard */; };
 		7F69373722555F5300F68EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F69373622555F5300F68EC5 /* Assets.xcassets */; };
 		7F69373A22555F5300F68EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F69373822555F5300F68EC5 /* LaunchScreen.storyboard */; };
 		7F69374322555F8C00F68EC5 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F69374222555F8C00F68EC5 /* ExternalAccessory.framework */; };
+		7F6937512255669D00F68EC5 /* UEComm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6937502255669D00F68EC5 /* UEComm.framework */; };
+		7F6937522255669D00F68EC5 /* UEComm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6937502255669D00F68EC5 /* UEComm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7F6937532255669D00F68EC5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7F6937522255669D00F68EC5 /* UEComm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7EB1EDF78330A96189901AC2 /* Pods-iAPTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iAPTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-iAPTest/Pods-iAPTest.release.xcconfig"; sourceTree = "<group>"; };
 		7F69372C22555F5200F68EC5 /* iAPTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAPTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F69372F22555F5200F68EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F69373122555F5200F68EC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +43,12 @@
 		7F69373B22555F5300F68EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F69374222555F8C00F68EC5 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		7F69374422555F8C00F68EC5 /* iAPTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iAPTest.entitlements; sourceTree = "<group>"; };
+		7F693748225561BD00F68EC5 /* UEComm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UEComm.xcodeproj; path = "mbg-BTCenturion-ios/UEComm/UEComm.xcodeproj"; sourceTree = "<group>"; };
+		7F69374A2255630700F68EC5 /* libUEComm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libUEComm.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F69374E2255645700F68EC5 /* libUEComm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libUEComm.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F6937502255669D00F68EC5 /* UEComm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UEComm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96328890ED0354F19C6B374 /* Pods-iAPTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iAPTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iAPTest/Pods-iAPTest.debug.xcconfig"; sourceTree = "<group>"; };
+		DDFF410FB8412296DAEC71F5 /* Pods_iAPTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iAPTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F6937512255669D00F68EC5 /* UEComm.framework in Frameworks */,
 				7F69374322555F8C00F68EC5 /* ExternalAccessory.framework in Frameworks */,
+				4D8C46629CF95D76CE280BF0 /* Pods_iAPTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,9 +68,11 @@
 		7F69372322555F5200F68EC5 = {
 			isa = PBXGroup;
 			children = (
+				7F6937502255669D00F68EC5 /* UEComm.framework */,
 				7F69372E22555F5200F68EC5 /* iAPTest */,
 				7F69372D22555F5200F68EC5 /* Products */,
 				7F69374122555F8C00F68EC5 /* Frameworks */,
+				CEE49A47DE8CF3C8CCCA6668 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,8 +102,21 @@
 			isa = PBXGroup;
 			children = (
 				7F69374222555F8C00F68EC5 /* ExternalAccessory.framework */,
+				DDFF410FB8412296DAEC71F5 /* Pods_iAPTest.framework */,
+				7F69374E2255645700F68EC5 /* libUEComm.a */,
+				7F69374A2255630700F68EC5 /* libUEComm.a */,
+				7F693748225561BD00F68EC5 /* UEComm.xcodeproj */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEE49A47DE8CF3C8CCCA6668 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D96328890ED0354F19C6B374 /* Pods-iAPTest.debug.xcconfig */,
+				7EB1EDF78330A96189901AC2 /* Pods-iAPTest.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F69373E22555F5300F68EC5 /* Build configuration list for PBXNativeTarget "iAPTest" */;
 			buildPhases = (
+				BDB317FA7483F9653A9B6782 /* [CP] Check Pods Manifest.lock */,
 				7F69372822555F5200F68EC5 /* Sources */,
 				7F69372922555F5200F68EC5 /* Frameworks */,
 				7F69372A22555F5200F68EC5 /* Resources */,
+				7F6937532255669D00F68EC5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +191,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BDB317FA7483F9653A9B6782 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iAPTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7F69372822555F5200F68EC5 /* Sources */ = {
@@ -299,6 +363,7 @@
 		};
 		7F69373F22555F5300F68EC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D96328890ED0354F19C6B374 /* Pods-iAPTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = iAPTest/iAPTest.entitlements;
@@ -318,6 +383,7 @@
 		};
 		7F69374022555F5300F68EC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EB1EDF78330A96189901AC2 /* Pods-iAPTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = iAPTest/iAPTest.entitlements;

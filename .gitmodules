@@ -1,0 +1,3 @@
+[submodule "mbg-BTCenturion-ios"]
+	path = mbg-BTCenturion-ios
+	url = https://github.com/Logitech/mbg-BTCenturion-ios.git
