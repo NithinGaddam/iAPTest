@@ -14,23 +14,7 @@
 		7F69373722555F5300F68EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F69373622555F5300F68EC5 /* Assets.xcassets */; };
 		7F69373A22555F5300F68EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F69373822555F5300F68EC5 /* LaunchScreen.storyboard */; };
 		7F69374322555F8C00F68EC5 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F69374222555F8C00F68EC5 /* ExternalAccessory.framework */; };
-		7F6937512255669D00F68EC5 /* UEComm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6937502255669D00F68EC5 /* UEComm.framework */; };
-		7F6937522255669D00F68EC5 /* UEComm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6937502255669D00F68EC5 /* UEComm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		7F6937532255669D00F68EC5 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				7F6937522255669D00F68EC5 /* UEComm.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7EB1EDF78330A96189901AC2 /* Pods-iAPTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iAPTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-iAPTest/Pods-iAPTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -46,7 +30,8 @@
 		7F693748225561BD00F68EC5 /* UEComm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UEComm.xcodeproj; path = "mbg-BTCenturion-ios/UEComm/UEComm.xcodeproj"; sourceTree = "<group>"; };
 		7F69374A2255630700F68EC5 /* libUEComm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libUEComm.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F69374E2255645700F68EC5 /* libUEComm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libUEComm.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F6937502255669D00F68EC5 /* UEComm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UEComm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F6C648E22556C45007AF775 /* iAPTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iAPTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		7F6C648F22556F12007AF775 /* UEComm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UEComm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96328890ED0354F19C6B374 /* Pods-iAPTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iAPTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iAPTest/Pods-iAPTest.debug.xcconfig"; sourceTree = "<group>"; };
 		DDFF410FB8412296DAEC71F5 /* Pods_iAPTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iAPTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -56,7 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F6937512255669D00F68EC5 /* UEComm.framework in Frameworks */,
 				7F69374322555F8C00F68EC5 /* ExternalAccessory.framework in Frameworks */,
 				4D8C46629CF95D76CE280BF0 /* Pods_iAPTest.framework in Frameworks */,
 			);
@@ -68,7 +52,6 @@
 		7F69372322555F5200F68EC5 = {
 			isa = PBXGroup;
 			children = (
-				7F6937502255669D00F68EC5 /* UEComm.framework */,
 				7F69372E22555F5200F68EC5 /* iAPTest */,
 				7F69372D22555F5200F68EC5 /* Products */,
 				7F69374122555F8C00F68EC5 /* Frameworks */,
@@ -94,6 +77,7 @@
 				7F69373622555F5300F68EC5 /* Assets.xcassets */,
 				7F69373822555F5300F68EC5 /* LaunchScreen.storyboard */,
 				7F69373B22555F5300F68EC5 /* Info.plist */,
+				7F6C648E22556C45007AF775 /* iAPTest-Bridging-Header.h */,
 			);
 			path = iAPTest;
 			sourceTree = "<group>";
@@ -101,6 +85,7 @@
 		7F69374122555F8C00F68EC5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7F6C648F22556F12007AF775 /* UEComm.framework */,
 				7F69374222555F8C00F68EC5 /* ExternalAccessory.framework */,
 				DDFF410FB8412296DAEC71F5 /* Pods_iAPTest.framework */,
 				7F69374E2255645700F68EC5 /* libUEComm.a */,
@@ -130,7 +115,6 @@
 				7F69372822555F5200F68EC5 /* Sources */,
 				7F69372922555F5200F68EC5 /* Frameworks */,
 				7F69372A22555F5200F68EC5 /* Resources */,
-				7F6937532255669D00F68EC5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -376,6 +360,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.logitech.ue.IAPTest2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iAPTest/iAPTest-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -396,6 +381,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.logitech.ue.IAPTest2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iAPTest/iAPTest-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
